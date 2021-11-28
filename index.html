@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Pattern</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <style>
+            body{
+                color: rgb(236, 96, 15);
+            }
+        </style>
+    </head>
+    <body>
+       
+        <p>Open console for output</p>
+        
+        <script>
+            
+             var number = prompt("Enter a number for print star pattern");
+             var stars = "";
+
+             for (var i = 1; i <= number; i++) {
+                 for (var j = 0; j < i; j++) {
+                    stars += "*";
+                   }
+                  stars += "\n";
+                 }
+
+                  for (var i = 1; i <= number - 1; i++) {
+                  for (var j = 0; j < number - i; j++) {
+                     stars += "*";
+                 }
+                   stars += "\n";
+                }
+                 console.log(stars);
+        </script>
+    </body>
+</html>
